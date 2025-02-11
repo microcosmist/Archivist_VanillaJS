@@ -1,0 +1,5 @@
+Copyright 2025 Samantha Ekanem (Microcosmist)
+
+All rights reserved.
+
+You may not use, copy, modify, distribute, or create derivative works of the code or the design in this repository without written permission.
