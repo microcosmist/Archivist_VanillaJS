@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+
+.container{
+    background-color:rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.header{
+    background-color: rgb(186, 203, 248);
+    height: 150px;   
+}
+
+.status{
+    font-size: 0.7rem;
+    color:#4c51ec;
+    margin: 2;
+}
+
+.title{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    height: 150px;
+    display: grid;
+    padding-top: 20px;
+    justify-content: center;
+    align-content: center;
+    color: rgb(0, 0, 0);
+
+}
+
+.shelf-container{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.shelf{
+    background-color: rgb(253, 252, 252);
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 55%;
+    gap: 3px;
+    justify-content: center;
+}
+
+
+.profile-icon{
+    height: 112%;
+    display: flex;
+    justify-content:center;   
+    align-items: flex-end;
+}
+
+.profile-icon img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-self: center;
+    box-shadow: 0 0 0 5px rgba(153, 142, 151, 0.4);
+}
+
+.book{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 50px; 
+    height: 150px; 
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; 
+    font-weight: 500;
+    font-family: 'Poppins';
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    border-radius: 3px;
+    text-align: center; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    gap: 10%;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#fff;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 8px;
+    width: 440px;
+}
+
+.modal.active .model-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+}
+
+.modal-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.or-text{
+    display: flex;
+    justify-content: left;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+
+.input-box {
+    width: 440px;
+    height: 50px;
+    padding: 10px;
+    font-family: 'Poppins';
+    margin-top: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #130b0b
+}
+
+
+.input-area {
+    max-width: 440px;
+    max-height: 250px;
+    min-width: 440px;
+    min-height: 250px;
+    overflow: scroll;
+    padding: 10px;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #130b0b
+}
+
+.search-button{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+.update-button{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+
+.toolbox-button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.closeButtons{
+    all:unset;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.pick-text p{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+    font-weight: 400;
+
+}
+
+.status-editor-button {
+    width:15px;
+    height: 15px;
+    background-image: url(/assets/status-icons/edit.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-bottom: 2px;
+
+}
+
+.reading-status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

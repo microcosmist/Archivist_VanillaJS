@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha's Bookshelf</title>
+    <link rel="stylesheet" href="css/homepage.css" />
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <div class="profile-icon">
+            <img src="assets/header-icons/icon.jpg">
+        </div>
+    </div>
+    <div class="title">Samantha's Bookshelf
+        <div class="reading-status"> 
+            <p id="status" class="status">Currently Reading ...</p>
+            <a id="status-editor-button" class="status-editor-button" href=""></a>
+        </div>
+        <div> 
+            <button type="button" class="toolbox-button" id="addBookButton"><img src="assets/toolbar-icons/add-book.svg"></button>
+            <button type="button" class="toolbox-button" id="removeBookButton"><img src="assets/toolbar-icons/remove-book.svg"></button>
+            <button type="button" class="toolbox-button" id="spineView"><img src="assets/toolbar-icons/book-spine.svg"></button>
+            <button type="button" class="toolbox-button" id="coverView"><img src="assets/toolbar-icons/book-cover.svg"></button>
+        </div>
+    </div>
+    <div class="shelf-container">
+        <div id= "shelf" class="shelf"></div>
+    </div>
+
+
+    <div class="modal" id="searchModal">
+        <div class="modal-content">
+            <div class ="modal-header">
+                <h2>Book Search</h2>
+                <button class="closeButtons" id="closeSearchButton">&times;</button>
+            </div>
+            <div class="pick-text"><p>Choose only one textbox to input book information.</p></div>
+            <div class="modal-input">
+                <input type="text" class="input-box" id="title-input" placeholder="Book Title">
+                <p class="or-text"></p>
+                <textarea class="input-area" id="alt-input" placeholder="List of Titles"></textarea>
+            </div>
+            <div class="modal-button">
+                <button class="search-button" id="searchButton">Search</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal" id="statusModal">
+        <div class="modal-content">
+            <div class ="modal-header">
+                <h2>Update Status</h2>
+                <button class="closeButtons" id="closeStatusButton">&times;</button>
+            </div>
+            <div class="modal-input">
+                <input maxlength="100" type="text" class="input-box" id="status-input" placeholder="Book Title">
+            </div>
+            <div class="modal-button">
+                <button class="update-button" id="updateButton">Update</button>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="javascript/books.js"></script> 
+<script src="javascript/status.js"></script> 
+</body>
+</html>
